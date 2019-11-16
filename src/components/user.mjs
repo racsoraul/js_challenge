@@ -18,7 +18,16 @@ function user(user_data) {
     />
     <hr />
     <h2>${name}</h2>
-    <span>username:</span> ${username}
+    <span>username:</span> <br/>
+    ${username} <br/>
+    <details>
+        <summary>more</summary>
+        <span>email:</span> <br/>
+        <a href="mailto:${email}">${email}</a> <br/>
+        <span>phone:</span> <br/> ${phone} <br/>
+        <span>website:</span> <br/>
+        <a href="${website}">${website}</a>
+    </details>
     `
     return card
 }
