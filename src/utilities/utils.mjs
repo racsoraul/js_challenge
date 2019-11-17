@@ -19,3 +19,16 @@ export function append_to_app(child) {
     const app_node = document.getElementById("root")
     app_node.appendChild(child)
 }
+
+/**
+ * gets posts of a given users
+ * @param posts holds the posts state
+ * @param user_id user's id
+ */
+export function get_user_posts(posts, user_id) {
+    return posts.filter(post => {
+        if (post.userId === user_id) {
+            return post
+        }
+    })
+}
